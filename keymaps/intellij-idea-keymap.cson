@@ -1,0 +1,84 @@
+# The descriptions above the key bindings are the ones from the IntelliJ IDEA Max OS X Keymap
+
+# Use more specific selector than core key bindings
+'atom-workspace atom-text-editor:not([mini])':
+
+  ###########
+  # Editing #
+  ###########
+
+  # Duplicate current line or selected block
+  'cmd-d': 'editor:duplicate-lines'
+
+  # Select successively increasing code blocks
+  'alt-up': 'editor:select-to-next-subword-boundary'
+
+  # Decrease current selection to previous state
+  'alt-down': 'editor:select-to-previous-subword-boundary'
+
+  # Delete line at caret
+  'cmd-backspace': 'editor:delete-line'
+
+  # Smart line join
+  'ctrl-shift-j': 'editor:join-lines'
+
+  # Move line up
+  'cmd-shift-up': 'editor:move-line-up'
+
+  # Move line down
+  'cmd-shift-down': 'editor:move-line-down'
+
+  ##################
+  # Search/Replace #
+  ##################
+
+  # Replace
+  'cmd-r': 'find-and-replace:show'
+
+  # Find in path
+  'cmd-shift-f': 'project-find:show'
+
+  # Replace in path
+  'cmd-shift-r': 'project-find:show'
+
+  ##############
+  # Navigation #
+  ##############
+
+  # Go to class
+  'cmd-o': 'fuzzy-finder:toggle-buffer-finder'
+
+  # Go to file
+  'cmd-shift-o': 'fuzzy-finder:toggle-file-finder'
+
+  # Go to next editor tab
+  'ctrl-right': 'pane:show-next-item'
+
+  # Go to previous editor tab
+  'ctrl-left': 'pane:show-previous-item'
+
+  # Go to line
+  'cmd-l': 'go-to-line:toggle'
+
+  # Recent files popup
+  'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
+
+  # Select current file or symbol in any view
+  'alt-f1': 'tree-view:reveal-active-file'
+
+  ##################
+  # Live Templates #
+  ##################
+
+  # Insert live templates
+  'cmd-j': 'snippets:available'
+
+  ###########
+  # General #
+  ###########
+
+  # Open corresponding tool window
+  'cmd-1': 'tree-view:toggle'
+
+  # Find action
+  'cmd-shift-a': 'command-palette:toggle'
