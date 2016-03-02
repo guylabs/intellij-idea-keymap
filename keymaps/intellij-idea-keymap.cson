@@ -1,7 +1,30 @@
 # The descriptions above the key bindings are the ones from the IntelliJ IDEA Max OS X Keymap
 
-# Use more specific selector than core key bindings
+################################################################################
+# Multi-platform                                                               #
+################################################################################
 'atom-workspace atom-text-editor:not([mini])':
+
+  ###########
+  # Editing #
+  ###########
+
+  # Smart line join
+  'ctrl-shift-j': 'editor:join-lines'
+
+  ##############
+  # Navigation #
+  ##############
+
+  # Select current file or symbol in any view
+  'alt-f1': 'tree-view:reveal-active-file'
+
+
+################################################################################
+# Mac OS                                                                       #
+################################################################################
+# Use more specific selector than core key bindings
+'.platform-darwin atom-workspace atom-text-editor:not([mini])':
 
   ###########
   # Editing #
@@ -18,9 +41,6 @@
 
   # Delete line at caret
   'cmd-backspace': 'editor:delete-line'
-
-  # Smart line join
-  'ctrl-shift-j': 'editor:join-lines'
 
   # Move line up
   'cmd-shift-up': 'editor:move-line-up'
@@ -63,9 +83,6 @@
   # Recent files popup
   'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
 
-  # Select current file or symbol in any view
-  'alt-f1': 'tree-view:reveal-active-file'
-
   ##################
   # Live Templates #
   ##################
@@ -82,3 +99,97 @@
 
   # Find action
   'cmd-shift-a': 'command-palette:toggle'
+
+################################################################################
+# Windows & Linux                                                              #
+################################################################################
+
+# Even if not editor pane is active
+'.platform-win32, .platform-linux':
+  ##############
+  # Navigation #
+  ##############
+
+  # Go to class
+  'ctrl-n': 'fuzzy-finder:toggle-file-finder'
+
+  # Go to file
+  'ctrl-shift-n': 'fuzzy-finder:toggle-file-finder'
+
+  # Open Settings
+  'ctrl-alt-s': 'settings-view:open'
+
+  # Project View
+  'alt-1': 'tree-view:toggle-focus'
+
+# Editor pane is active
+'.platform-win32 atom-text-editor:not([mini]), .platform-linux atom-text-editor:not([mini])':
+
+  ###########
+  # Editing #
+  ###########
+
+  # Duplicate current line or selected block
+  'ctrl-d': 'editor:duplicate-lines'
+
+  # Delete line at caret
+  'shift-delete': 'editor:delete-line'
+
+  # Move line up
+  'ctrl-shift-up': 'editor:move-line-up'
+
+  # Move line down
+  'ctrl-shift-down': 'editor:move-line-down'
+
+  # Select Word
+  'ctrl-w': 'editor:select-word'
+
+  ##################
+  # Search/Replace #
+  ##################
+
+  # Replace
+  'ctrl-r': 'find-and-replace:show'
+
+  # Find in path
+  'ctrl-shift-f': 'project-find:show'
+
+  # Replace in path
+  'ctrl-shift-r': 'project-find:show'
+
+  ##############
+  # Navigation #
+  ##############
+
+  # Go to next editor tab
+  'alt-right' : 'pane:show-next-item'
+
+  # Go to previous editor tab
+  'alt-left' : 'pane:show-previous-item'
+
+  # Close active tab
+  'ctrl-f4': 'pane:close'
+
+  # Go to line
+  'ctrl-l': 'go-to-line:toggle'
+
+  # Recent files popup
+  'ctrl-e': 'fuzzy-finder:toggle-buffer-finder'
+
+
+  ##################
+  # Live Templates #
+  ##################
+
+  # Insert live templates
+  'ctrl-j': 'snippets:available'
+
+  ###########
+  # General #
+  ###########
+
+  # Open corresponding tool window
+  'ctrl-1': 'tree-view:toggle'
+
+  # Find action
+  'ctrl-shift-a': 'command-palette:toggle'
