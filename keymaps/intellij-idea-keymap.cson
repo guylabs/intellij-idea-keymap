@@ -103,7 +103,7 @@
 ################################################################################
 # Windows & Linux                                                              #
 ################################################################################
-'.platform-win32  atom-workspace atom-text-editor:not([mini]), .platform-win32  atom-workspace atom-text-editor:not([mini])':
+'.platform-win32 atom-workspace atom-text-editor:not([mini]), .platform-linux atom-workspace atom-text-editor:not([mini])':
 
   ###########
   # Editing #
