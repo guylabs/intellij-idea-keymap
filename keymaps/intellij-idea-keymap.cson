@@ -1,4 +1,5 @@
-# The descriptions above the key bindings are the ones from the IntelliJ IDEA Max OS X Keymap
+# The descriptions above the key bindings are the ones from the IntelliJ IDEA Keymap
+# Use more specific selector than core key bindings
 
 ################################################################################
 # Multi-platform                                                               #
@@ -21,9 +22,8 @@
 
 
 ################################################################################
-# Mac OS                                                                       #
+# Mac OS only                                                                  #
 ################################################################################
-# Use more specific selector than core key bindings
 '.platform-darwin atom-workspace atom-text-editor:not([mini])':
 
   ###########
@@ -66,7 +66,7 @@
   ##############
 
   # Go to class
-  'cmd-o': 'fuzzy-finder:toggle-buffer-finder'
+  'cmd-o': 'fuzzy-finder:toggle-file-finder'
 
   # Go to file
   'cmd-shift-o': 'fuzzy-finder:toggle-file-finder'
@@ -103,27 +103,7 @@
 ################################################################################
 # Windows & Linux                                                              #
 ################################################################################
-
-# Even if not editor pane is active
-'.platform-win32, .platform-linux':
-  ##############
-  # Navigation #
-  ##############
-
-  # Go to class
-  'ctrl-n': 'fuzzy-finder:toggle-file-finder'
-
-  # Go to file
-  'ctrl-shift-n': 'fuzzy-finder:toggle-file-finder'
-
-  # Open Settings
-  'ctrl-alt-s': 'settings-view:open'
-
-  # Project View
-  'alt-1': 'tree-view:toggle-focus'
-
-# Editor pane is active
-'.platform-win32 atom-text-editor:not([mini]), .platform-linux atom-text-editor:not([mini])':
+'.platform-win32  atom-workspace atom-text-editor:not([mini]), .platform-win32  atom-workspace atom-text-editor:not([mini])':
 
   ###########
   # Editing #
@@ -132,17 +112,24 @@
   # Duplicate current line or selected block
   'ctrl-d': 'editor:duplicate-lines'
 
+  # Select successively increasing code blocks
+  'alt-up': 'editor:select-to-next-subword-boundary'
+
+  # Decrease current selection to previous state
+  'alt-down': 'editor:select-to-previous-subword-boundary'
+
   # Delete line at caret
   'shift-delete': 'editor:delete-line'
+  'ctrl-y': 'editor:delete-line'
+
+  # Smart line join
+  'ctrl-shift-j': 'editor:join-lines'
 
   # Move line up
   'ctrl-shift-up': 'editor:move-line-up'
 
   # Move line down
   'ctrl-shift-down': 'editor:move-line-down'
-
-  # Select Word
-  'ctrl-w': 'editor:select-word'
 
   ##################
   # Search/Replace #
@@ -161,14 +148,17 @@
   # Navigation #
   ##############
 
+  # Go to class
+  'ctrl-n': 'fuzzy-finder:toggle-file-finder'
+
+  # Go to file
+  'ctrl-shift-n': 'fuzzy-finder:toggle-file-finder'
+
   # Go to next editor tab
-  'alt-right' : 'pane:show-next-item'
+  'alt-right': 'pane:show-next-item'
 
   # Go to previous editor tab
-  'alt-left' : 'pane:show-previous-item'
-
-  # Close active tab
-  'ctrl-f4': 'pane:close'
+  'alt-left': 'pane:show-previous-item'
 
   # Go to line
   'ctrl-l': 'go-to-line:toggle'
@@ -176,6 +166,8 @@
   # Recent files popup
   'ctrl-e': 'fuzzy-finder:toggle-buffer-finder'
 
+  # Select current file or symbol in any view
+  'alt-f1': 'tree-view:reveal-active-file'
 
   ##################
   # Live Templates #
