@@ -20,7 +20,7 @@ As a power IntelliJ IDEA user I am used to the key bindings for years and theref
 
 The `intellij-idea-keymap` package has the following features:
 
-* Basic key bindings of IntelliJ IDEA are mapped to core commands in Atom for Mac OSX
+* Basic key bindings of IntelliJ IDEA are mapped to core commands in Atom for Mac OSX, Windows and Linux
 
 # Installation
 
@@ -36,13 +36,13 @@ If the `apm` command is not recognized then please open Atom, open the `Atom` me
 
 Please have a look at the changelog [here](https://github.com/guylabs/intellij-idea-keymap/blob/master/CHANGELOG.md).
 
-# Known issues
-
-* The initial version (`0.1.0`) does just support the *basic* Mac OSX key bindings of IntelliJ IDEA. Have a look the keymap [here](https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard_Mac.pdf)
-
 # Contribution
 
-If you want to add the Windows/Linux based keymaps or add any additions to the Mac OSX one please create a pull request and I will try my best to review and merge it. Contributing is highly appreciated! Thanks in advance.
+If you want to add more shortcuts or any other feature please create a pull request and I will try my best to review and merge it. Contributing is highly appreciated! Thanks in advance.
+
+## Contributions
+
+* [#1](https://github.com/guylabs/intellij-idea-keymap/pull/1) Windows and Linux keymap. Thanks to [@gquintana](https://github.com/gquintana).
 
 # License
 
