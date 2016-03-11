@@ -20,7 +20,6 @@
   # Select current file or symbol in any view
   'alt-f1': 'tree-view:reveal-active-file'
 
-
 ################################################################################
 # Mac OS only                                                                  #
 ################################################################################
@@ -166,9 +165,6 @@
 
   # Recent files popup
   'ctrl-e': 'fuzzy-finder:toggle-buffer-finder'
-
-  # Select current file or symbol in any view
-  'alt-f1': 'tree-view:reveal-active-file'
 
   ##################
   # Live Templates #
