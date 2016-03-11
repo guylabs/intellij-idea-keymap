@@ -1,9 +1,18 @@
 # The descriptions above the key bindings are the ones from the IntelliJ IDEA Keymap
-# Use more specific selector than core key bindings
 
-################################################################################
-# Multi-platform                                                               #
-################################################################################
+####################################################################################################
+# Multi-platform                                                                                   #
+####################################################################################################
+
+'atom-workspace':
+
+  ##############
+  # Navigation #
+  ##############
+
+  # Select current file or symbol in any view
+  'alt-f1': 'tree-view:reveal-active-file'
+
 'atom-workspace atom-text-editor:not([mini])':
 
   ###########
@@ -13,17 +22,43 @@
   # Smart line join
   'ctrl-shift-j': 'editor:join-lines'
 
+####################################################################################################
+# Mac                                                                                              #
+# ---------------                                                                                  #
+# https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf #
+####################################################################################################
+
+'.platform-darwin atom-workspace':
+
+  ##################
+  # Search/Replace #
+  ##################
+
+  # Find in path
+  'cmd-shift-f': 'project-find:show'
+
+  # Replace in path
+  'cmd-shift-r': 'project-find:show'
+
   ##############
   # Navigation #
   ##############
 
-  # Select current file or symbol in any view
-  'alt-f1': 'tree-view:reveal-active-file'
+  # Go to class
+  'cmd-o': 'fuzzy-finder:toggle-file-finder'
 
-################################################################################
-# Mac OS only                                                                  #
-################################################################################
-# https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf
+  # Go to file
+  'cmd-shift-o': 'fuzzy-finder:toggle-file-finder'
+
+  ###########
+  # General #
+  ###########
+
+  # Find action
+  'cmd-shift-a': 'command-palette:toggle'
+
+  # Open corresponding tool window
+  'cmd-1': 'tree-view:toggle'
 
 '.platform-darwin atom-workspace atom-text-editor:not([mini])':
 
@@ -56,21 +91,9 @@
   # Replace
   'cmd-r': 'find-and-replace:show'
 
-  # Find in path
-  'cmd-shift-f': 'project-find:show'
-
-  # Replace in path
-  'cmd-shift-r': 'project-find:show'
-
   ##############
   # Navigation #
   ##############
-
-  # Go to class
-  'cmd-o': 'fuzzy-finder:toggle-file-finder'
-
-  # Go to file
-  'cmd-shift-o': 'fuzzy-finder:toggle-file-finder'
 
   # Go to next editor tab
   'ctrl-right': 'pane:show-next-item'
@@ -91,20 +114,46 @@
   # Insert live templates
   'cmd-j': 'snippets:available'
 
+####################################################################################################
+# Windows & Linux                                                                                  #
+# ---------------                                                                                  #
+# https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard.pdf     #
+####################################################################################################
+
+'.platform-win32 atom-workspace, .platform-linux atom-workspace':
+
+  ##################
+  # Search/Replace #
+  ##################
+
+  # Find in path
+  'ctrl-shift-f': 'project-find:show'
+
+  # Replace in path
+  'ctrl-shift-r': 'project-find:show'
+
+  ##############
+  # Navigation #
+  ##############
+
+  # Go to class
+  'ctrl-n': 'fuzzy-finder:toggle-file-finder'
+
+  # Go to file
+  'ctrl-shift-n': 'fuzzy-finder:toggle-file-finder'
+
   ###########
   # General #
   ###########
 
-  # Open corresponding tool window
-  'cmd-1': 'tree-view:toggle'
-
   # Find action
-  'cmd-shift-a': 'command-palette:toggle'
+  'ctrl-shift-a': 'command-palette:toggle'
 
-################################################################################
-# Windows & Linux                                                              #
-################################################################################
-# https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard.pdf
+  # Open corresponding tool window
+  'ctrl-1': 'tree-view:toggle'
+
+  # Open settings
+  'ctrl-alt-s': 'settings-view:open'
 
 '.platform-win32 atom-workspace atom-text-editor:not([mini]), .platform-linux atom-workspace atom-text-editor:not([mini])':
 
@@ -138,21 +187,9 @@
   # Replace
   'ctrl-r': 'find-and-replace:show'
 
-  # Find in path
-  'ctrl-shift-f': 'project-find:show'
-
-  # Replace in path
-  'ctrl-shift-r': 'project-find:show'
-
   ##############
   # Navigation #
   ##############
-
-  # Go to class
-  'ctrl-n': 'fuzzy-finder:toggle-file-finder'
-
-  # Go to file
-  'ctrl-shift-n': 'fuzzy-finder:toggle-file-finder'
 
   # Go to next editor tab
   'alt-right': 'pane:show-next-item'
@@ -175,16 +212,3 @@
 
   # Insert live templates
   'ctrl-j': 'snippets:available'
-
-  ###########
-  # General #
-  ###########
-
-  # Open corresponding tool window
-  'ctrl-1': 'tree-view:toggle'
-
-  # Find action
-  'ctrl-shift-a': 'command-palette:toggle'
-
-  # Open settings
-  'ctrl-alt-s': 'settings-view:open'
