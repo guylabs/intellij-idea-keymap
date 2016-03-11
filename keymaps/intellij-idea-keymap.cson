@@ -160,6 +160,9 @@
   # Go to previous editor tab
   'alt-left': 'pane:show-previous-item'
 
+  # Close active tab
+  'ctrl-f4': 'core:close'
+
   # Go to line
   'ctrl-l': 'go-to-line:toggle'
 
@@ -182,3 +185,6 @@
 
   # Find action
   'ctrl-shift-a': 'command-palette:toggle'
+
+  # Open settings
+  'ctrl-alt-s': 'settings-view:open'
