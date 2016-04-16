@@ -91,6 +91,12 @@
   # Replace
   'cmd-r': 'find-and-replace:show'
 
+  # Add Selection for Next Occurence
+  'ctrl-g': 'find-and-replace:select-next'
+
+  # Unselect Occurence
+  'ctrl-shift-g': 'find-and-replace:select-undo'
+
   ##############
   # Navigation #
   ##############
@@ -141,6 +147,12 @@
 
   # Go to file
   'ctrl-shift-n': 'fuzzy-finder:toggle-file-finder'
+
+  # Add Selection for Next Occurence
+  'alt-j': 'find-and-replace:select-next'
+
+  # Unselect Occurence
+  'alt-shift-j': 'find-and-replace:select-undo'
 
   ###########
   # General #
