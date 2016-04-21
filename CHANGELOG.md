@@ -1,3 +1,6 @@
+## 0.2.1 - Add "Select/unselect for next occurence" shortcuts
+* This release adds support for the "Select/unselect for next occurence" shortcuts [#4](https://github.com/guylabs/intellij-idea-keymap/pull/4) pull request from @christophehurpeau.
+
 ## 0.2.0 - Add Windows/Linux keymap and refine some shortcuts
 * This release adds support for Windows and Linux thanks to the [#1](https://github.com/guylabs/intellij-idea-keymap/pull/1) pull request from @gquintana.
 * It adds two new shortcuts for closing the active tab and open the settings. See [#2](https://github.com/guylabs/intellij-idea-keymap/issues/2).
