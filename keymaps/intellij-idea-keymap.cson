@@ -28,6 +28,24 @@
 # https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf #
 ####################################################################################################
 
+'body':
+
+  ##########
+  # window #
+  ##########
+
+  # Select Next Tab
+  'cmd-shift-]': 'pane:show-next-item'
+
+  # Select Previous Tab
+  'cmd-shift-[': 'pane:show-previous-item'
+
+  # Goto Next Splitter
+  'alt-tab': 'window:focus-next-pane'
+
+  # Goto Splitter Splitter
+  'alt-shift-tab': 'window:focus-previous-pane'
+
 '.platform-darwin atom-workspace':
 
   ##################
@@ -84,6 +102,15 @@
   # Move line down
   'cmd-shift-down': 'editor:move-line-down'
 
+  # Move line up
+  'alt-shift-up': 'editor:move-line-up'
+
+  # Move line down
+  'alt-shift-down': 'editor:move-line-down'
+
+  # Reformat code
+  'cmd-alt-l': 'atom-beautify:beautify-editor'
+
   ##################
   # Search/Replace #
   ##################
@@ -113,12 +140,53 @@
   # Recent files popup
   'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
 
+  # Reveal active file
+  'cmd-ctrl-s': 'tree-view:reveal-active-file'
+
+  # Show bookmarks
+  'cmd-f3': 'bookmarks:view-all'
+
+  # Toggle bookmark
+  'f3': 'bookmarks:toggle-bookmark'
+
   ##################
   # Live Templates #
   ##################
 
   # Insert live templates
   'cmd-j': 'snippets:available'
+
+'.platform-darwin .tree-view':
+
+  ###########
+  # General #
+  ###########
+
+  'left': 'tree-view:collapse-directory'
+  'right': 'tree-view:expand-item'
+  'enter': 'tree-view:open-selected-entry'
+  'cmd-n': 'tree-view:add-file'
+
+  ##############
+  # Navigation #
+  ##############
+
+  # Open corresponding tool window
+  'cmd-1': 'tree-view:toggle'
+
+  ###########
+  # Editing #
+  ###########
+
+  'cmd-c': 'tree-view:copy'
+  'cmd-shift-c': 'tree-view:copy-full-path'
+  'cmd-x': 'tree-view:cut'
+  'cmd-v': 'tree-view:paste'
+  'cmd-r': 'tree-view:move'
+  'f6': 'tree-view:move'
+  'shift-f6': 'tree-view:move'
+  'delete': 'tree-view:remove'
+  'backspace': 'tree-view:remove'
 
 ####################################################################################################
 # Windows & Linux                                                                                  #
