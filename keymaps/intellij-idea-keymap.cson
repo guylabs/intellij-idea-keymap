@@ -136,6 +136,8 @@
 
   # Go to line
   'cmd-l': 'go-to-line:toggle'
+  'cmd-\\': 'unset!' # cancel the tree-view shortcut
+  'cmd-k cmd-b': 'unset!' # cancel the tree-view shortcut
 
   # Recent files popup
   'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
@@ -162,9 +164,7 @@
   # General #
   ###########
 
-  'left': 'tree-view:collapse-directory'
-  'right': 'tree-view:expand-item'
-  'enter': 'tree-view:open-selected-entry'
+  'a': 'unset!'
   'cmd-n': 'tree-view:add-file'
 
   ##############
@@ -178,15 +178,12 @@
   # Editing #
   ###########
 
-  'cmd-c': 'tree-view:copy'
+  'ctrl-shift-C': 'unset!'
   'cmd-shift-c': 'tree-view:copy-full-path'
-  'cmd-x': 'tree-view:cut'
-  'cmd-v': 'tree-view:paste'
+  'f2': 'unset!'
   'cmd-r': 'tree-view:move'
   'f6': 'tree-view:move'
   'shift-f6': 'tree-view:move'
-  'delete': 'tree-view:remove'
-  'backspace': 'tree-view:remove'
 
 ####################################################################################################
 # Windows & Linux                                                                                  #
