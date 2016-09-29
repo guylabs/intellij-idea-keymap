@@ -34,12 +34,6 @@
   # window #
   ##########
 
-  # Select Next Tab
-  'cmd-shift-]': 'pane:show-next-item'
-
-  # Select Previous Tab
-  'cmd-shift-[': 'pane:show-previous-item'
-
   # Goto Next Splitter
   'alt-tab': 'window:focus-next-pane'
 
@@ -136,8 +130,6 @@
 
   # Go to line
   'cmd-l': 'go-to-line:toggle'
-  'cmd-\\': 'unset!' # cancel the tree-view shortcut
-  'cmd-k cmd-b': 'unset!' # cancel the tree-view shortcut
 
   # Recent files popup
   'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
@@ -164,7 +156,6 @@
   # General #
   ###########
 
-  'a': 'unset!'
   'cmd-n': 'tree-view:add-file'
 
   ##############
@@ -178,9 +169,7 @@
   # Editing #
   ###########
 
-  'ctrl-shift-C': 'unset!'
   'cmd-shift-c': 'tree-view:copy-full-path'
-  'f2': 'unset!'
   'cmd-r': 'tree-view:move'
   'f6': 'tree-view:move'
   'shift-f6': 'tree-view:move'
