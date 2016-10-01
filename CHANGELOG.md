@@ -1,3 +1,6 @@
+## 0.2.2 - Enhance Mac shortcuts and add support for atom-beautify
+* This release adds alternate shortcuts for existing ones, enhances the tree view shortcuts and introduces support for the atom-beautify package. Thanks to @5pid for the pull request [#7](https://github.com/guylabs/intellij-idea-keymap/pull/7).
+
 ## 0.2.1 - Add "Select/unselect for next occurence" shortcuts
 * This release adds support for the "Select/unselect for next occurence" shortcuts [#4](https://github.com/guylabs/intellij-idea-keymap/pull/4) pull request from @christophehurpeau.
 

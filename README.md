@@ -21,6 +21,7 @@ As a power IntelliJ IDEA user I am used to the key bindings for years and theref
 The `intellij-idea-keymap` package has the following features:
 
 * Basic key bindings of IntelliJ IDEA are mapped to core commands in Atom for Mac OSX, Windows and Linux
+* If you want to format the code automatically you can install the [atom-beautify](https://atom.io/packages/atom-beautify) package and then use the `cmd-alt-l` shortcut to format code in the active editor.
 
 # Installation
 
@@ -44,6 +45,7 @@ If you want to add more shortcuts or any other feature please create a pull requ
 
 * [#1](https://github.com/guylabs/intellij-idea-keymap/pull/1) Windows and Linux keymap. Thanks to [@gquintana](https://github.com/gquintana).
 * [#4](https://github.com/guylabs/intellij-idea-keymap/pull/4) New shortcuts. Thanks to [@christophehurpeau](https://github.com/christophehurpeau).
+* [#7](https://github.com/guylabs/intellij-idea-keymap/pull/7) New shortcuts, tree view enhancements and support for [atom-beautify](https://atom.io/packages/atom-beautify) package.
 
 # License
 
