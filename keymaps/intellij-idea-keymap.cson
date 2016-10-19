@@ -230,6 +230,9 @@
   # Duplicate current line or selected block
   'ctrl-d': 'editor:duplicate-lines'
 
+  # Start new line
+  'shift-enter': 'editor:newline-below'
+
   # Select successively increasing code blocks
   'ctrl-w': 'editor:select-to-next-subword-boundary'
 
