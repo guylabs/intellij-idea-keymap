@@ -21,6 +21,9 @@
 
   # Smart line join
   'ctrl-shift-j': 'editor:join-lines'
+  
+  # Start new line below
+  'shift-enter': 'editor:newline-below'
 
 ####################################################################################################
 # Mac                                                                                              #
