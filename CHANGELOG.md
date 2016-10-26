@@ -1,3 +1,6 @@
+## 0.2.3 - Add shortcut for `shift-enter`
+* This release adds the `shift-enter` shortcut to have the same functionality as in IDEA when creating new lines. Thanks to @jcoulter for the pull request [#11](https://github.com/guylabs/intellij-idea-keymap/pull/11).
+
 ## 0.2.2 - Enhance Mac shortcuts and add support for atom-beautify
 * This release adds alternate shortcuts for existing ones, enhances the tree view shortcuts and introduces support for the atom-beautify package. Thanks to @5pid for the pull request [#7](https://github.com/guylabs/intellij-idea-keymap/pull/7).
 
