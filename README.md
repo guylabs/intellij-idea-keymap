@@ -44,9 +44,9 @@ If you want to add more shortcuts or any other feature please create a pull requ
 ## Contributions
 
 * [#1](https://github.com/guylabs/intellij-idea-keymap/pull/1) Windows and Linux keymap. Thanks to [@gquintana](https://github.com/gquintana).
-* [#4](https://github.com/guylabs/intellij-idea-keymap/pull/4) New shortcuts. Thanks to [@jcoulter](https://github.com/jcoulter). [@christophehurpeau](https://github.com/christophehurpeau).
+* [#4](https://github.com/guylabs/intellij-idea-keymap/pull/4) New shortcuts. Thanks to  [@christophehurpeau](https://github.com/christophehurpeau).
 * [#7](https://github.com/guylabs/intellij-idea-keymap/pull/7) New shortcuts, tree view enhancements and support for [atom-beautify](https://atom.io/packages/atom-beautify) package. Thanks to [@5pid](https://github.com/5pid).
-* [#11](https://github.com/guylabs/intellij-idea-keymap/pull/11) `shift-enter` shortcut. Thanks to @
+* [#11](https://github.com/guylabs/intellij-idea-keymap/pull/11) `shift-enter` shortcut. Thanks to [@jcoulter](https://github.com/jcoulter).
 
 # License
 
