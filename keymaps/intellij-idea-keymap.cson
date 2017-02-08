@@ -233,6 +233,9 @@
   # Duplicate current line or selected block
   'ctrl-d': 'editor:duplicate-lines'
 
+  # Change selected text to upper-case
+  'ctrl-shift-u': 'editor:upper-case'
+
   # Select successively increasing code blocks
   'ctrl-w': 'editor:select-to-next-subword-boundary'
 
