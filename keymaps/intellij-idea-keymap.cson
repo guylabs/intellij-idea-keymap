@@ -21,7 +21,7 @@
 
   # Smart line join
   'ctrl-shift-j': 'editor:join-lines'
-  
+
   # Start new line below
   'shift-enter': 'editor:newline-below'
 
@@ -248,6 +248,13 @@
 
   # Move line down
   'ctrl-shift-down': 'editor:move-line-down'
+
+  # Delete to previous word
+  'ctrl-backspace': 'editor:delete-to-previous-word-boundary'
+
+  # Delete to next word
+  'ctrl-delete': 'editor:delete-to-next-word-boundary'
+
 
   ##################
   # Search/Replace #
