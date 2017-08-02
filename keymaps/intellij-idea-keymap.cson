@@ -83,6 +83,9 @@
 
   # Duplicate current line or selected block
   'cmd-d': 'editor:duplicate-lines'
+  
+  # Select successively increasing code blocks
+  'cmd-w': 'editor:select-to-next-subword-boundary'
 
   # Select successively increasing code blocks
   'alt-up': 'editor:select-to-next-subword-boundary'
